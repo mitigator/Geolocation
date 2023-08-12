@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <h2>Chem</h2>
+                </div>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html">Blog</a></li>
+                    <li><a href="./index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <aside>
+            <div class="post">
+                <!--?xml version="1.0" standalone="no"?-->              <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">                    <defs>                         <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">                            <stop id="stop1" stop-color="rgba(81.585, 55, 248, 1)" offset="0%"></stop>                            <stop id="stop2" stop-color="rgba(31, 251, 209.386, 1)" offset="100%"></stop>                        </linearGradient>                    </defs>                <path fill="url(#sw-gradient)" d="M15.4,-5.4C22.4,3.2,32.1,13.7,30,15.7C27.9,17.8,13.9,11.4,2.2,10.1C-9.5,8.9,-19.1,12.7,-20.9,10.8C-22.8,8.8,-17,1.2,-12.2,-6.1C-7.5,-13.3,-3.7,-20.2,0.2,-20.4C4.2,-20.5,8.4,-13.9,15.4,-5.4Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;" stroke="url(#sw-gradient)"></path>              </svg>
+                
+                <h1>Recents Posts</h1>
+                <ul>
+                    <li><a href="">Lorem ipsum dolor sit amet.</a></li>
+                    <li><a href="">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                    <li><a href="">Lorem, ipsum.</a></li>
+                    <li><a href="">Lorem ipsum dolor sit.</a></li>
+                </ul>
+            </div>
+            <div class="comments">
+                <h1>Recents Comments</h1>
+                <ul>
+                    <li><a href="">Lorem ipsum dolor sit amet.</a></li>
+                    <li><a href="">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                    <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                    <li><a href="">Lorem, ipsum.</a></li>
+                    <li><a href="">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="">Lorem ipsum dolor sit.</a></li>
+                </ul>
+            </div>
+            <div class="archives">
+                <h1>Archives</h1>
+                <ul>
+                    <li><a href="">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="">Lorem ipsum dolor sit amet.</a></li>
+                    <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                    <li><a href="">Lorem, ipsum.</a></li>
+                    <li><a href="">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                    <li><a href="">Lorem ipsum dolor sit.</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <div class="blog-post">
+                <div class="meta">
+                    <h1>Lab Test</h1>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <small>By <a href="#">Shubham</a> on August 12,2022</small>
+                </div>
+                <div class="post">
+                    <img src="./Images/Image1.png" alt="">
+                    <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ea placeat temporibus aliquid nemo, quas enim provident atque veritatis, exercitationem sunt esse necessitatibus animi, dicta dignissimos molestias accusamus beatae numquam. <a href="">...</a></p>
+                </div>
+            </div>
+
+            <div class="blog-post">
+                <div class="meta">
+                    <h1>DNA</h1>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <small>By <a href="#">Shubham</a> on August 3,2023</small>
+                </div>
+                <div class="post">
+                    <img src="./Images/Image2.png" alt="">
+                    <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ea placeat temporibus aliquid nemo, quas enim provident atque veritatis, exercitationem sunt esse necessitatibus animi, dicta dignissimos molestias accusamus beatae numquam.  <a href="">...</a></p>
+                </div>
+            </div>
+
+            <div class="blog-post">
+                <div class="meta">
+                    <h1>Organic Chemistry</h1>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <small>By <a href="#">Shubham</a> on August 14,2023</small>
+                </div>
+                <div class="post">
+                    <img src="./Images/Image3.png" alt="">
+                    <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ea placeat temporibus aliquid nemo, quas enim provident atque veritatis, exercitationem sunt esse necessitatibus animi, dicta dignissimos molestias accusamus beatae numquam.  <a href="">...</a></p>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <div id="myMap" style="position:relative;width:900px;height:300px;"></div>
+
+        </footer>
+
+    </div>
+    <script type='text/javascript'>
+        function GetMap() {
+            var map = new Microsoft.Maps.Map('#myMap', {
+                credentials: 'AktfdvzVyzQ5zIAHGW35-JtzvLrTfCzh0iYVDnOwg3QF7exi5CJ_KLQ6wMUWZS35'
+            });
+    
+            //Request the user's location
+            navigator.geolocation.getCurrentPosition(function (position) {
+                var loc = new Microsoft.Maps.Location(
+                    position.coords.latitude,
+                    position.coords.longitude);
+    
+                //Add a pushpin at the user's location.
+                var pin = new Microsoft.Maps.Pushpin(loc);
+                map.entities.push(pin);
+    
+                //Center the map on the user's location.
+                map.setView({ center: loc, zoom: 15 });
+            });
+        }
+        </script>
+        <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
+<script src="app.js"></script>
+</body>
+
+</html>
